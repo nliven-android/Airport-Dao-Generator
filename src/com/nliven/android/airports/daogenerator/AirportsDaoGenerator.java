@@ -40,10 +40,14 @@ public class AirportsDaoGenerator {
      */
     private static void addAirportsTable(Schema schema) {
         
-        //This is the TABLE name
+        /*
+         * This is the TABLE name
+         */
         Entity airport = schema.addEntity("Airport");
         
-        //These are the Columns    
+        /*
+         * These are the Columns    
+         */
         airport.addIdProperty().autoincrement();
         airport.addStringProperty("code");
         airport.addStringProperty("icao");
