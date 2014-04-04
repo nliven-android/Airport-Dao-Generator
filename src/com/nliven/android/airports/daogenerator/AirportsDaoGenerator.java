@@ -23,13 +23,14 @@ public class AirportsDaoGenerator {
          * Define your new tables in a separate static method and "Add" them here...
          */
         addAirportsTable(schema);        
-                
+           
+        
         /*
          * Generates the DAO and Entity/Model POJOs and should copy them to a 
          * directory in our main Android app project 
          */
         try {
-            new DaoGenerator().generateAll(schema, "../Airports/src");
+            new DaoGenerator().generateAll(schema, "../AirportsApp/src");
         } catch (Exception e) {
             e.printStackTrace();
         }
