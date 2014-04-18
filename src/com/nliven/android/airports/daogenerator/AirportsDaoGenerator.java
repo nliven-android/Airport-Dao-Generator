@@ -4,6 +4,12 @@ import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
 import de.greenrobot.daogenerator.Schema;
 
+/**
+ * Auto-generates a SQLite Database from the implementation below
+ * 
+ * @author mwoolley59
+ *
+ */
 public class AirportsDaoGenerator {
 
     public static void main(String[] args) throws Exception {
