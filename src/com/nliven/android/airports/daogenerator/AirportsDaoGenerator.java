@@ -22,8 +22,7 @@ public class AirportsDaoGenerator {
         /*
          * Define your new tables in a separate static method and "Add" them here...
          */
-        addAirportsTable(schema);        
-           
+        addAirportsTable(schema);                   
         
         /*
          * Generates the DAO and Entity/Model POJOs and should copy them to a 
