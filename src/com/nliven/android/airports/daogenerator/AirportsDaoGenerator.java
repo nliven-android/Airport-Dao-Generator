@@ -1,9 +1,17 @@
 package com.nliven.android.airports.daogenerator;
 
+import java.io.IOException;
+
 import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
 import de.greenrobot.daogenerator.Schema;
 
+/**
+ * Auto-generates a SQLite Database from the implementation below
+ * 
+ * @author mwoolley59
+ *
+ */
 public class AirportsDaoGenerator {
 
     public static void main(String[] args) throws Exception {
@@ -30,7 +38,17 @@ public class AirportsDaoGenerator {
          */
         try {
             new DaoGenerator().generateAll(schema, "../AirportsApp/src");
+        } catch (IOException e) {
+            
+            //Try different path, as Github cloning may use the name of the repository,
+            //which could be slightly different.
+            try {
+                new DaoGenerator().generateAll(schema, "../Airports-App/src");
+            } catch (Exception ex){
+                e.printStackTrace();
+            }            
         } catch (Exception e) {
+            //Oops, something else happened...
             e.printStackTrace();
         }
     }
