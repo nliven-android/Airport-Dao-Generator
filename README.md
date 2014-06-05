@@ -4,6 +4,9 @@ Airport-Dao-Generator
 Demonstrates the GreenDao ORM tool.  This tool auto-generates database Entity model POJOs and DAO files
 to perform normal CRUD and Query operations on your entity objects. (See http://greendao-orm.com/ for full GreenDAO details.)
 
+---------
+Eclipse:
+---------
 This is intended to run with the "AirportsApp" Android Sample App project, so be sure to import both these projects locally.  
 
 In Eclipse, be sure to "Import" this as a regular Java Project and NOT an Android Project i.e. 
@@ -20,3 +23,11 @@ in the AirportsDaoGenerator.java file.  Then, you'll need to execute this projec
 
 You then can view the auto-generated files in the "AirportsApp" and see if your changes were added there.  However, 
 first right-click on the "AirportsApp" project and click 'Refresh' to be sure your project is refreshed w/ your changes.
+
+----------------
+Android Studio:
+----------------
+Coming soon...
+
+
+
